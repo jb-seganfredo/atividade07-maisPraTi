@@ -28,15 +28,15 @@ function Timer() {
 
     return (
         <div className="bg-slate-500 text-slate-50 p-4 my-6">
-            <h2 className="text-2xl font-bold text-center m-5">Timer</h2>
+            <h2 className="text-4xl font-bold text-center m-5">Timer</h2>
             <div className="flex justify-center">
                 <h2 className=" py-10 px-16 text-5x1 border-4 border-slate-600 rounded flex justify-center items-center text-5xl m-3" > {time}</h2>
             </div>
-            <div className="flex justify-center gap-1">
-                <button className="bg-sky-800 text-slate-50 font-bold px-2 rounded hover:opacity-70" onClick={handlePause}>
+            <div>
+                <button className="bg-sky-800 text-slate-50 p-2 rounded hover:opacity-70" onClick={handlePause}>
                     {isActive ? "Pause" : "Resume"}
                 </button>
-                <button className="bg-red-700 text-slate-50ont-bold px-5 py-3 rounded m-2 hover:bg-red-600" onClick={handleReset}> Reset </button>
+                <button className="bg-red-700 text-slate-50 rounded p-2 ml-2 hover:bg-red-600" onClick={handleReset}> Reset </button>
             </div>
         </div>
     );

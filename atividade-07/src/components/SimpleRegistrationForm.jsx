@@ -17,7 +17,7 @@ function SimpleForm() {
 
     return (
         <div className="bg-slate-500 p-4 my-6">
-            <h2 className="text-2xl font-bold text-center m-5">Register</h2>
+            <h2 className="text-4xl font-bold text-center m-5 text-white">Register</h2>
             <div className="flex justify-center">
                 <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                     <input

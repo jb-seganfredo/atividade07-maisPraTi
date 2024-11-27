@@ -10,7 +10,7 @@ function SimpleCounter() {
 
 
     return (
-        <div className="bg-slate-500 text-slate-50">
+        <div className="bg-slate-500 text-slate-50 mt-6 p-4">
             <h2 className="text-2xl font-bold text-center m-5">Simple Counter</h2>
             <div className="flex justify-center">
                 <h2 className=" py-10 px-16 text-5x1 border-4 border-slate-600 rounded flex justify-center items-center text-5xl m-3" > {count}</h2>

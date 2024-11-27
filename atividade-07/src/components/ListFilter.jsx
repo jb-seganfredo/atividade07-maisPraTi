@@ -24,7 +24,7 @@ function ListFilter() {
     const [filter, setFilter] = useState("");
 
     return (
-        <div className="bg-slate-500 p-4 my-3">
+        <div className="bg-slate-500 p-4 mt-6">
             <h2 className="text-2xl font-bold text-center m-5 text-slate-50">List Filter</h2>
             <input
                 type="text"
