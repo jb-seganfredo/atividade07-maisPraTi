@@ -24,7 +24,7 @@ function ChoresList() {
     };
 
     return (
-        <div className="bg-slate-500 my-4 p-5">
+        <div className="bg-slate-500 my-6 p-5">
             <h2 className="text-2xl font-bold text-center m-5 text-slate-50">
                 Chores List
             </h2>

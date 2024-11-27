@@ -1,22 +1,46 @@
-import './App.css'
-import SimpleCounter from './components/SimpleCounter'
-import BackgroundChanger from './components/BackgroundChanger'
-import ChoresList from './components/ChoresList'
-import Timer from './components/Timer'
-import ListFilter from './components/ListFilter'
+import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import SimpleCounter from './components/SimpleCounter';
+import BackgroundChanger from './components/BackgroundChanger';
+import ChoresList from './components/ChoresList';
+import Timer from './components/Timer';
+import ListFilter from './components/ListFilter';
+import SimpleForm from './components/SimpleRegistrationForm';
 
 export default function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <Router>
+      <div className="App">
+        {/* Links para navegar entre as páginas */}
+        <ul className='flex justify-between font-serif text-lg'>
+          <li className='bg-red-500 p-4 rounded'><Link to="/">Home</Link></li>
+          <li className='bg-red-500 p-4 rounded'><Link to="/counter">Counter</Link></li>
+          <li className='bg-red-500 p-4 rounded'><Link to="/background">Background Changer</Link></li>
+          <li className='bg-red-500 p-4 rounded'><Link to="/chores">Chores List</Link></li>
+          <li className='bg-red-500 p-4 rounded'><Link to="/timer">Timer</Link></li>
+          <li className='bg-red-500 p-4 rounded'><Link to="/filter">List Filter</Link></li>
+          <li className='bg-red-500 p-4 rounded'><Link to="/SimpleForm">Register Form</Link></li>
+        </ul>
 
-      <SimpleCounter />
-      <BackgroundChanger />
-      <ChoresList />
-      <Timer />
-      <ListFilter />
-  </>
-  )
+       
+        <Routes>
+          <Route path="/counter" element={<SimpleCounter />} />
+
+          
+          <Route path="/background" element={<BackgroundChanger />} />
+
+          
+          <Route path="/chores" element={<ChoresList />} />
+
+          
+          <Route path="/timer" element={<Timer />} />
+
+          
+          <Route path="/filter" element={<ListFilter />} />
+
+          <Route path="/SimpleForm" element={<SimpleForm />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
