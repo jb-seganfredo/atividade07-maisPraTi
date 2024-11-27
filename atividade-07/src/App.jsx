@@ -5,7 +5,10 @@ import BackgroundChanger from './components/BackgroundChanger';
 import ChoresList from './components/ChoresList';
 import Timer from './components/Timer';
 import ListFilter from './components/ListFilter';
+import ImageGallery from './components/ImageGallery';
 import SimpleForm from './components/SimpleRegistrationForm';
+
+import Tabs from './components/Tabs';
 
 export default function App() {
   return (
@@ -20,6 +23,9 @@ export default function App() {
           <li className='bg-red-500 p-4 rounded'><Link to="/timer">Timer</Link></li>
           <li className='bg-red-500 p-4 rounded'><Link to="/filter">List Filter</Link></li>
           <li className='bg-red-500 p-4 rounded'><Link to="/SimpleForm">Register Form</Link></li>
+          <li className='bg-red-500 p-4 rounded'><Link to="/Tabs">Tabs</Link></li>
+          <li className='bg-red-500 p-4 rounded'><Link to="/ImageGallery">Gallery</Link></li>
+
         </ul>
 
        
@@ -39,6 +45,11 @@ export default function App() {
           <Route path="/filter" element={<ListFilter />} />
 
           <Route path="/SimpleForm" element={<SimpleForm />} />
+
+
+          <Route path='/ImageGallery' element={<ImageGallery />} />
+
+          <Route path='/Tabs' element={<Tabs />} />
         </Routes>
       </div>
     </Router>

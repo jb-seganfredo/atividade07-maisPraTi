@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function BackgroundChanger() {
-    const [color, setColor] = useState("#000000");
+    const [color, setColor] = useState();
 
     useEffect(() => {
         document.body.style.backgroundColor = color;
