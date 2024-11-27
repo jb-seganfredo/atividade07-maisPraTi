@@ -30,10 +30,8 @@ export default function App() {
           <li className='bg-sky-900 text-white p-4 rounded'><Link to="/SpecialTimer">Special Timer</Link></li>
           <li className='bg-sky-900 text-white p-4 rounded'><Link to="/Tabs">Tabs</Link></li>            
 
-
         </ul>
-
-       
+        
         <Routes>
 
           <Route path="/counter" element={<SimpleCounter />} />

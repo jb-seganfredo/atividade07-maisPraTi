@@ -8,7 +8,6 @@ function SimpleCounter() {
         setCount(0);
     }
 
-
     return (
         <div className="bg-slate-500 text-slate-50 mt-6 p-4">
             <h2 className="text-2xl font-bold text-center m-5">Simple Counter</h2>

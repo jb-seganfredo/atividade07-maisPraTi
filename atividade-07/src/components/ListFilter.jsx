@@ -21,6 +21,7 @@ function ListFilter() {
         "Paula",
         "Quintino",
     ]);
+    
     const [filter, setFilter] = useState("");
 
     return (
