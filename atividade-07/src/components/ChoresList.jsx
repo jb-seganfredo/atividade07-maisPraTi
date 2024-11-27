@@ -32,7 +32,7 @@ function ChoresList() {
             <div className="flex justify-center mb-5">
                 <input
                     type="text"
-                    className="py-2 px-4 border-2 border-slate-600 rounded mr-2"
+                    className="py-2 px-2 border-2 border-slate-600 rounded mr-2"
                     placeholder="Add a new chore"
                     value={newChore}
                     onChange={(e) => setNewChore(e.target.value)}

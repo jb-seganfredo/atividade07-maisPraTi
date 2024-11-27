@@ -41,13 +41,13 @@ function Gallery() {
 
   return (
     <div className="gallery-container p-8">
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Gallery image ${index + 1}`}
-            className="w-60 min-h-52 object-cover cursor-pointer transition-transform transform hover:scale-105"
+            className="w-full h-40  object-cover cursor-pointer transition-transform transform hover:scale-105"
             onClick={() => handleImageClick(image)}
           />
         ))}
@@ -72,7 +72,7 @@ function Gallery() {
               <img
                 src={selectedImage}
                 alt="Selected"
-                className="w-full h-96" 
+                className="w-full max-h-96" 
               />
               <button
                 className="absolute right-0 p-4 text-white text-2xl"

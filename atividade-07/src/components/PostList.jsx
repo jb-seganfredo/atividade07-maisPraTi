@@ -35,7 +35,7 @@ function PostsList() {
             {loading && <p className="text-gray-500">Loading posts...</p>}
             {!loading && posts.length === 0 && <p>No posts available.</p>}
 
-            <ul className=" px-48">
+            <ul className="px-4 sm:px-8 lg:px-48">
                 {posts.map((post) => (
                     <li key={post.id} className="mb">
                         <h2 className="text-lg font-semibold">{post.title}</h2>
